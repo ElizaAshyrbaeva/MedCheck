@@ -34,7 +34,6 @@ public class Service {
                     CascadeType.DETACH},
             orphanRemoval = true)
     private List<Doctors> doctors = new ArrayList<>();
-
     @OneToMany(mappedBy = "service",
             cascade = CascadeType.ALL,
             orphanRemoval = true)

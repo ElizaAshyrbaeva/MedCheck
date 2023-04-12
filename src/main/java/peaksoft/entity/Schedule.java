@@ -37,7 +37,7 @@ public class Schedule {
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "service_id")
     private Service service;
-    @OneToMany
+    @OneToMany(cascade = {CascadeType.ALL})
     List< ScheduleDateAndTime> dateAndTimes;
 
 }
